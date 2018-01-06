@@ -7,16 +7,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
-public class LombokSampleTest {
+public class ValSampleTest {
 
-    private LombokSample sample;
+    private ValSample sample;
 
     @Before
     public void before() {
-        sample = new LombokSample();
+        sample = new ValSample();
     }
 
     @Test

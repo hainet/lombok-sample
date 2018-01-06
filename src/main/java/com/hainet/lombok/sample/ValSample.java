@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LombokSample {
+public class ValSample {
 
     public List<String> arrayListAsVal() {
         val list = new ArrayList<String>();
