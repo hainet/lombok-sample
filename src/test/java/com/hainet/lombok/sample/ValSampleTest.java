@@ -20,7 +20,7 @@ public class ValSampleTest {
     }
 
     @Test
-    public void arrayListAsVal() {
+    public void arrayListAsValTest() {
         assertThat(
                 sample.arrayListAsVal(),
                 is(instanceOf(ArrayList.class))
@@ -32,7 +32,7 @@ public class ValSampleTest {
     }
 
     @Test
-    public void hashMapAsVal() {
+    public void hashMapAsValTest() {
         assertThat(
                 sample.hashMapAsVal(),
                 is(instanceOf(HashMap.class))
