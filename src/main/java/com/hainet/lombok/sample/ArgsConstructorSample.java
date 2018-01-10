@@ -46,7 +46,8 @@ public class ArgsConstructorSample {
 
         private int id;
         private final String name;
-        @NonNull private String password;
+        @NonNull
+        private String password;
 
         public int getId() {
             return id;
@@ -66,7 +67,8 @@ public class ArgsConstructorSample {
 
         private int id;
         private final String name;
-        @NonNull private String password;
+        @NonNull
+        private String password;
 
         public int getId() {
             return id;
@@ -78,6 +80,17 @@ public class ArgsConstructorSample {
 
         public String getPassword() {
             return password;
+        }
+    }
+
+    @AllArgsConstructor(staticName = "of")
+    public static class AllArgsConstructorStaticNameSample {
+
+        @NonNull
+        private String name;
+
+        public String getName() {
+            return name;
         }
     }
 }

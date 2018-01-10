@@ -53,4 +53,13 @@ public class ArgsConstructorSampleTest {
         // @NonNullが付与されたパラメータにnullが指定されるとNullPointerExceptionが発生する。
         new ArgsConstructorSample.AllArgsConstructorSample(1, "hainet", null);
     }
+
+    @Test(expected = NullPointerException.class)
+    public void allArgsConstructorStaticName() {
+        ArgsConstructorSample.AllArgsConstructorStaticNameSample sample = ArgsConstructorSample.AllArgsConstructorStaticNameSample.of("hainet");
+
+        assertThat(sample.getName(), is("hainet"));
+
+        ArgsConstructorSample.AllArgsConstructorStaticNameSample.of(null);
+    }
 }
