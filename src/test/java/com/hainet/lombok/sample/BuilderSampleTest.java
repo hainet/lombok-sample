@@ -36,4 +36,12 @@ public class BuilderSampleTest {
                 .name(null)
                 .build();
     }
+
+    @Test
+    public void builderDefaultSampleTest() {
+        BuilderSample.BuilderDefaultSample sample = BuilderSample.BuilderDefaultSample.builder()
+                .build();
+
+        assertThat(sample.getDefaultValue(), is("defaultValue"));
+    }
 }

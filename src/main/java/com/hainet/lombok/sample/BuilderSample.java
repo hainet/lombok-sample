@@ -42,4 +42,15 @@ public class BuilderSample {
             return name;
         }
     }
+
+    @Builder
+    public static class BuilderDefaultSample {
+
+        @Builder.Default
+        private final String defaultValue = "defaultValue";
+
+        public String getDefaultValue() {
+            return defaultValue;
+        }
+    }
 }
